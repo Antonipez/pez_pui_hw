@@ -1,0 +1,210 @@
+body{
+    font-family: Roboto, Arial, Helvetica, san-serif;
+    font-size: 16px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+hr{
+    height: 2px;
+    background-color: #000000;
+  }
+
+nav{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6px;
+    box-sizing: border-box;
+    text-align: center;
+    text-align: center;
+}
+.nav1{
+    padding: 4px;
+    text-decoration: none;
+    color:#000000
+}
+
+#highlight{
+    background-color: rgb(247, 233, 160);
+}
+
+#noline{
+    text-decoration: none;
+    color:#000000
+}
+
+.headline{
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.notecard {
+    width: 222px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.notecard:hover {
+    background-color: rgb(247, 233, 160);
+    width: 222px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.notecard-thumbnail{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.notecard-spec{
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+select{
+    width: 180px;
+    height: 20px;
+}
+
+.infoimage{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article{
+    width: 190px;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purchase{
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.notecard-cart {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.notecard-cart-image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display:block;
+}
+
+.remove{
+    font-size: 12px;
+    width: 50px;
+    height: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    color:#000000;
+    text-decoration: none;
+}
+
+.a1{
+    width: auto;
+    height: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    text-align: center;
+}
+
+.price{
+    font-size: 20px;
+    width: auto;
+    height: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    display:block;
+    text-align: center;
+}
+
+span{
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(247, 233, 160);
+}
+
+.check-price{
+    font-size: 20px;
+    width: auto;
+    height: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.check-button{
+    width: 100px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: rgb(247, 233, 160);
+    text-align: center;
+}

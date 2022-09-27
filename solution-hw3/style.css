@@ -1,0 +1,255 @@
+body{
+    font-family: Roboto, Arial, Helvetica, san-serif;
+    font-size: 20px;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+.header{
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+}  
+.logo{
+    width: 400px;
+}
+.header-right{
+    width: 780px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.navigation{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 6px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav1{
+    padding: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color:#000000
+}
+#highlight{
+    background-color: rgb(247, 233, 160);
+}
+#noline{
+    text-decoration: none;
+    color:#000000
+}
+.line{
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+hr{
+    height: 2px;
+    background-color: #000000;
+  }
+.headline{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 24px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.gallery{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-row{
+    display:flex;
+    flex-direction: row;
+}
+.notecard {
+    width: 222px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.notecard:hover {
+    background-color: rgb(247, 233, 160);
+    width: 222px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.notecard-thumbnail{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.notecard-spec{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.infoimage{
+    width: 600px;
+    height: 600px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+.notcard-spec-right{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.spec-content{
+    margin-bottom: 50px;
+}
+select{
+    width: 420px;
+    height: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+article{
+    width: 190px;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purchase{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.checkout-price{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 20px;
+
+}
+.addtocart{
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+    display:inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(247, 233, 160);
+}
+
+
+.notecard-cart {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-left: 400px;
+    margin-right: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cart-content{
+    display: flex;
+}
+
+.notecard-cart-image{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    display:block;
+}
+
+.cart-spec{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.a1{
+    width: auto;
+    text-align: left;
+}
+
+.price{
+    font-size: 20px;
+    width: auto;
+    height: 0px;
+    margin-top: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+    display:block;
+    text-align: right;
+}
+
+button{
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+    display:inline-block;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.check-price{
+    display: flex;
+    flex-direction: row;
+}
+.total{
+    margin-left: 125px;
+    font-size: 20px;
+}
+.check-button{
+    width: 100px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    background-color: rgb(247, 233, 160);
+    text-align: center;
+}

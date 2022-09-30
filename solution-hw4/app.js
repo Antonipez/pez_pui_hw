@@ -1,3 +1,12 @@
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+      this.type = rollType;
+      this.glazing = rollGlazing;
+      this.size = packSize;
+      this.basePrice = basePrice;
+  }
+}
+
 // store glazing dropdown menu content
 let allGlazing = [
   {
@@ -58,9 +67,15 @@ for (let i=0; i<allPackSize.length; i++){
   selectPackSize.appendChild(dropdownOption);
 }
 
-const basePrice = 2.49;
+// update the detail page links
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const chosenRolls = params.get('rolls');
+
+const basePrice = rolls[chosenRolls].basePrice;
 
 // update the final total price
+// let checkOutPrice = 0;
 function updatePrice(){
   let checkOutPrice = (parseFloat(basePrice) + parseFloat(selectGlazing.value)) * selectPackSize.value;
   document.querySelector(".checkout-price").innerHTML = "$ " + checkOutPrice.toFixed(2);
@@ -75,40 +90,26 @@ let packOption = document.querySelector('#pack-size');
 packOption.addEventListener('change', updatePrice)
 
 
-
-//hw4 update
-// update the detail page links
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const chosenRolls = params.get('rolls')
-
 // Update the header text
 const headerElement = document.querySelector(".headline");
 headerElement.innerText = chosenRolls + " Cinnamon Roll";
 
 // Update the image
 const rollImage = document.querySelector(".infoimage");
-rollImage.src = "products/" + chosenRolls.imageFile;
+rollImage.src = "./products/" + rolls[chosenRolls].imageFile;
 rollImage.alt = chosenRolls + " Cinnamon Roll";
 
 // Update the price
 const priceElement = document.querySelector(".checkout-price");
-priceElement.innerText = "$" + chosenRolls.basePrice;
+priceElement.innerText = "$" + rolls[chosenRolls].basePrice;
 
 //add to cart action
 const cart = [];
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing = rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
 function addToCart() {
-    const addedRoll = new Roll(chosenRolls, selectGlazing, selectPackSize, checkOutPrice);
+    const rollGlazing = selectGlazing.options[selectGlazing.selectedIndex].text;
+    const packSize = selectPackSize.options[selectPackSize.selectedIndex].text;
+    const addedRoll = new Roll(chosenRolls, rollGlazing, packSize, basePrice);
     cart.push(addedRoll);
     console.log(cart);
 }

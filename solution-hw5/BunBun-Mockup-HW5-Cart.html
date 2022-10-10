@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Bun Bun Bake Shop</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="cartupdate.js"></script>
   </head>
   
   <body>
@@ -28,36 +29,23 @@
     </div>
 
     <main>
-      <section>        
-        <div class="notecard-cart">
-          <div class="cart-content">
-            <img class="notecard-cart-image" src="products/original-cinnamon-roll.jpg" alt="origianl cinnamon"/>
-            <div class="cart-spec">
-              <div class="a1">Original Cinnamon Roll</div>
-              <div class="a1">Glazing: Keep original</div>
-              <div class="a1">Pack Size: 1</div>
+      <section class="notecard-list">
+        <template class="notecard-template">        
+          <div class="notecard-cart">
+            <div class="cart-content">
+              <img class="notecard-cart-image" src="products/original-cinnamon-roll.jpg" alt="origianl cinnamon"/>
+              <div class="cart-spec">
+                <div class="a1" id="note-rolltype">Original Cinnamon Roll</div>
+                <div class="a1" id="note-glazing">Glazing: Keep original</div>
+                <div class="a1" id="note-packsize">Pack Size: 1</div>
+              </div>
+              <div class="price">$ 2.49</div>
             </div>
-            <div class="price">$ 2.49</div>
-          </div>
-          <div class="remove">
-            <button type="button">Remove</button>
-          </div>
-        </div>
-
-        <div class="notecard-cart">
-          <div class="cart-content">
-            <img class="notecard-cart-image" src="products/double-chocolate-cinnamon-roll.jpg" alt="double chocolate cinnamon"/>
-            <div class="cart-spec">
-              <div class="a1">Double Chocolate Cinnamon Roll</div>
-              <div class="a1">Glazing: Sugar milk</div>
-              <div class="a1">Pack Size: 6</div>
+            <div class="remove">
+              <button type="button">Remove</button>
             </div>
-            <div class="price">$ 27.45</div>
           </div>
-          <div class="remove">
-            <button type="button">Remove</button>
-          </div>
-        </div>
+        </template>
 
         <div class="notecard-cart">
           <div class="line">
@@ -65,7 +53,7 @@
           </div>
           <div class="check-price">
             <div class="total">Total</div>
-            <div class="price">$ 29.94</div>
+            <div class="price" id="total-price">$ 29.94</div>
           </div>
           <div class="check-button">Checkout</div>
         </div>     

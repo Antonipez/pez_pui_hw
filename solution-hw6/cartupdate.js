@@ -16,7 +16,9 @@ let checkOutPrice = 0;
 function addNewRoll(rollType, rollGlazing, packSize, basePrice){
     const rollCart = new Roll(rollType, rollGlazing, packSize, basePrice);
     cart.add(rollCart);
+    return rollCart;
 }
+
 
 //calculate price when change
 const glazeOptions = {
@@ -111,3 +113,41 @@ function deleteCard(rollCart){
 for (const rollCart of cart){
     addElement(rollCart);
 }
+
+
+
+
+
+//hw6//
+
+function addItemToCart() {
+    const noteEditorImage = document.querySelector(".notecard-cart-image");
+    const noteEditorRolltype = document.querySelector("#note-rolltype");
+    const noteEditorGlazing = document.querySelector("#note-glazing");
+    const noteEditorPacksize = document.querySelector("#note-packsize");
+    const noteEditorPrice = document.querySelector(".price");
+  
+    const rollCart = addNewRoll(noteEditorImage.src, noteEditorRolltype.value, noteEditorGlazing.value, noteEditorPacksize.value, noteEditorPrice.value);
+    addElement(rollCart);
+    saveToLocalStorage();
+  }
+  
+  function saveToLocalStorage(){
+    const notecardArray = Array.from(cart);
+    const notecardArrayString = JSON.stringify(notecardArray);
+    localStorage.setItem("storedItems", notecardArrayString);
+  }
+  
+  function retrieveFromLocalStorage(){
+    const notecardArrayString = localStorage.getItem("storedItems");
+    const notecardArray = JSON.parse(notecardArrayString);
+  
+    for (const noteData of notecardArray){
+        const rollCart = addNewNote(noteData.noteEditorImage, noteData.noteEditorRolltype, noteData.noteEditorGlazing, noteData.noteEditorPacksize, noteData.noteEditorPrice);
+        addElement(rollCart);
+    }
+  }
+  
+  if (localStorage.getItem("storedItems") != null){
+    retrieveFromLocalStorage();
+  }

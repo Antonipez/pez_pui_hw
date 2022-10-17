@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Bun Bun Bake Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="cartupdate.js"></script>
+  </head>
+  
+  <body>
+    
+    <div class="header">
+      <a class="logo" href="BunBun-Mockup-HW6-Gallery.html">
+        <img src="logo/logo-01.svg" alt="brand logo"/>
+      </a>
+      <div class="header-right">
+        <div class="navigation">
+          <a class="nav1" href="BunBun-Mockup-HW6-Gallery.html">PRODUCTS</a>
+          <a class="nav1" id="highlight" href="#cart">CART</a>
+        </div>
+        <div class="line">
+          <hr>
+        </div>
+        <div class="headline">
+          Shopping Cart
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="notecard-list">
+        <template class="notecard-template">        
+          <div class="notecard-cart">
+            <div class="cart-content">
+              <img class="notecard-cart-image" src="products/original-cinnamon-roll.jpg" alt="cinnamon rolls"/>
+              <div class="cart-spec">
+                <div class="a1" id="note-rolltype">Original Cinnamon Roll</div>
+                <div class="a1" id="note-glazing">Glazing: Keep original</div>
+                <div class="a1" id="note-packsize">Pack Size: 1</div>
+              </div>
+              <div class="price">$ 2.49</div>
+            </div>
+            <div class="remove">
+              <button type="button">Remove</button>
+            </div>
+          </div>
+        </template>
+
+        <div class="notecard-cart">
+          <div class="line">
+            <hr>
+          </div>
+          <div class="check-price">
+            <div class="total">Total</div>
+            <div class="price" id="total-price">$ 29.94</div>
+          </div>
+          <div class="check-button">Checkout</div>
+        </div>     
+      </section>
+    </main>  
+  </body>
+</html>

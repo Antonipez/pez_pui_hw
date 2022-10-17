@@ -36,7 +36,6 @@ function calculatePrice(rollCart){
     return sum;
 }
 
-
 //clone the roll info into template
 function addElement(rollCart){
     let template = document.querySelector(".notecard-template");

@@ -72,7 +72,6 @@ const cart = [];
 
 //save rolls to local storage
 let rollData = localStorage.getItem("storedRolls");
-// if (rollData) cart = Array.from(JSON.parse(rollData));
 
 
 // update the detail page links
@@ -117,6 +116,7 @@ function addToCart() {
     const packSize = selectPackSize.options[selectPackSize.selectedIndex].text;
     const addedRoll = new Roll(chosenRolls, rollGlazing, packSize, basePrice);
     cart.push(addedRoll);
+    console.log(cart);
     
     saveToLocalStorage();
 }

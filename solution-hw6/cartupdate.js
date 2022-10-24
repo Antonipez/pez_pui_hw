@@ -9,7 +9,7 @@ class Roll {
     }
 }
 
-
+//retrieve data from storage
 let rollData = JSON.parse(localStorage.getItem('storedRolls'));
 let rollSet = new Set([...rollData]);
 
@@ -17,8 +17,8 @@ let rollSet = new Set([...rollData]);
 function addNewRoll(rollType, rollGlazing, packSize, basePrice){
     const rollCart = new Roll(rollType, rollGlazing, packSize, basePrice);
     rollSet.add(rollCart);
-    return rollCart;
 }
+
 
 //calculate price when change
 const glazeOptions = {
@@ -33,6 +33,7 @@ const sizeOptions = {
     "Pack Size: 6": 5,
     "Pack Size: 12": 10
 }
+
 function calculatePrice(rollCart){
     const sum = ((rollCart.basePrice + glazeOptions[rollCart.glazing]) * sizeOptions[rollCart.size]).toFixed(2);
     return sum;
@@ -46,7 +47,7 @@ function updateCheckOutPrice() {
         checkOutPrice = checkOutPrice + calculatePrice(rollCart);
     }
     const totalPrice = document.querySelector("#total-price");
-    totalPrice.innerText = "$ " + checkOutPrice.toFixed(2);
+    totalPrice.innerText = "$ " + checkOutPrice;
 }
 
 //clone the roll info into template

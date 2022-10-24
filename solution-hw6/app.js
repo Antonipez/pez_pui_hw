@@ -67,15 +67,22 @@ for (let i=0; i<allPackSize.length; i++){
   selectPackSize.appendChild(dropdownOption);
 }
 
+
+const cart = [];
+
+//save rolls to local storage
+let rollData = localStorage.getItem("storedRolls");
+// if (rollData) cart = Array.from(JSON.parse(rollData));
+
+
 // update the detail page links
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const chosenRolls = params.get('rolls');
-
 const basePrice = rolls[chosenRolls].basePrice;
 
+
 // update the final total price
-// let checkOutPrice = 0;
 function updatePrice(){
   let checkOutPrice = (parseFloat(basePrice) + parseFloat(selectGlazing.value)) * selectPackSize.value;
   document.querySelector(".checkout-price").innerHTML = "$ " + checkOutPrice.toFixed(2);
@@ -103,13 +110,18 @@ rollImage.alt = chosenRolls + " Cinnamon Roll";
 const priceElement = document.querySelector(".checkout-price");
 priceElement.innerText = "$" + rolls[chosenRolls].basePrice;
 
-//add to cart action
-const cart = [];
 
+//add to cart action
 function addToCart() {
     const rollGlazing = selectGlazing.options[selectGlazing.selectedIndex].text;
     const packSize = selectPackSize.options[selectPackSize.selectedIndex].text;
     const addedRoll = new Roll(chosenRolls, rollGlazing, packSize, basePrice);
     cart.push(addedRoll);
-    console.log(cart);
+    
+    saveToLocalStorage();
+}
+
+function saveToLocalStorage(){
+  const rollArrayString = JSON.stringify(cart);
+  localStorage.setItem("storedRolls", rollArrayString);
 }

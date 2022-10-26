@@ -22,29 +22,30 @@ function addNewRoll(rollType, rollGlazing, packSize, basePrice){
 
 //calculate price when change
 const glazeOptions = {
-    "Glazing: Original": 0,
-    "Glazing: Sugar Milk": 0,
-    "Glazing: Vanilla Milk": 0.50,
-    "Glazing: Double Chocolate": 1.50
+    "Keep original": 0,
+    "Sugar milk": 0,
+    "Vanilla milk": 0.50,
+    "Double chocolate": 1.50
 }
 const sizeOptions = {
-    "Pack Size: 1": 1,
-    "Pack Size: 3": 3,
-    "Pack Size: 6": 5,
-    "Pack Size: 12": 10
+    "1": 1,
+    "3": 3,
+    "6": 5,
+    "12": 10
 }
 
+//calculate each item's price in cart
 function calculatePrice(rollCart){
     const sum = ((rollCart.basePrice + glazeOptions[rollCart.glazing]) * sizeOptions[rollCart.size]).toFixed(2);
     return sum;
 }
 
 
-// update the checkout price in the cart
+// update the total checkout price in the cart
 function updateCheckOutPrice() {
     let checkOutPrice = 0;
     for (const rollCart of rollSet) {
-        checkOutPrice = checkOutPrice + calculatePrice(rollCart);
+        checkOutPrice = checkOutPrice + Number((calculatePrice(rollCart)));
     }
     const totalPrice = document.querySelector("#total-price");
     totalPrice.innerText = "$ " + checkOutPrice;

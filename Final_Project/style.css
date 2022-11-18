@@ -1,0 +1,86 @@
+/* landing page */
+
+body{
+    background-color: black;
+    margin: auto;
+}
+
+#scroll-text{
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    color: #7c7c7c; 
+    position: fixed;
+}
+
+.landing-page{
+    height: 100vh;
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.landing-section{
+    margin: 280px auto 280px auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+#big-title{
+    padding: 10px;
+    font-family: "Montserrat";
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#mid-body{
+    padding: 40px;
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+#mid-title-highlight{
+    font-family: "Montserrat";
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #ed1765;
+}
+
+#landing-page-btn{
+    width: 300px;
+    height: 50px;
+    flex-grow: 0;
+    margin: 100px auto 100px auto;
+    border-radius: 25px;
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    background-color: #fff;
+    color: #ed1765;
+}
+
+
+
+/* axo view page */
+
+.axo-view{
+    background-color: white;
+}
+
+#axo-view-pic{
+    width: 100%;
+    height: auto;
+}

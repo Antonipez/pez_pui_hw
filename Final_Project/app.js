@@ -1,2 +1,2 @@
-yarn add @fontsource/montserrat;
-import "@fontsource/montserrat";
+// yarn add @fontsource/montserrat;
+// import "@fontsource/montserrat";

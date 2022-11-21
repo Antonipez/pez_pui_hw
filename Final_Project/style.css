@@ -1,8 +1,12 @@
 /* landing page */
 
 body{
-    background-color: black;
+    background-color: white;
     margin: auto;
+}
+
+#black-background{
+    background-color: black;
 }
 
 #scroll-text{
@@ -74,13 +78,117 @@ body{
 
 
 
+
+
 /* axo view page */
+
+#back-btn{
+    width: 30px;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
 
 .axo-view{
     background-color: white;
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
 
 #axo-view-pic{
     width: 100%;
     height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#start-journey{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 82%;
+    left: 15%;
+}
+
+#target-tag{
+    width: 100px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#kst-tag{
+    width: 100px;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#nail-salon-tag{
+    width: 100px;
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#elpc-tag{
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#duo-tag{
+    width: 100px;
+    position: absolute;
+    top: 96%;
+    left: 70%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#whole-foods-tag{
+    width: 100px;
+    position: absolute;
+    top: 120%;
+    left: 65%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+#dance-studio-tag{
+    width: 100px;
+    position: absolute;
+    top: 158%;
+    left: 36%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #BCBEC0;
+}
+
+
+
+
+
+/* acts page */
+
+main{
+    background-color: #fff;
+}
+
+.all-acts{
+    display: flex;
+    flex-direction: row;
+}
+
+#act-graph{
+    height: 100vh;
+}
+
+#act-text{
+    height: 100vh;
 }

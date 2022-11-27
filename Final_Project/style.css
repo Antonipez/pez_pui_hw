@@ -13,9 +13,9 @@ body{
     left: 50%;
     bottom: 50px;
     transform: translate(-50%);
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 100;
     text-align: center;
     color: #7c7c7c; 
     position: fixed;
@@ -23,7 +23,7 @@ body{
 
 .landing-page{
     height: 100vh;
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -38,7 +38,7 @@ body{
 
 #big-title{
     padding: 10px;
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 120px;
     font-weight: bold;
     text-align: center;
@@ -47,7 +47,7 @@ body{
 
 #mid-body{
     padding: 40px;
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -55,7 +55,7 @@ body{
 }
 
 #mid-title-highlight{
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -67,13 +67,15 @@ body{
     height: 50px;
     flex-grow: 0;
     margin: 100px auto 100px auto;
+    border: 0;
     border-radius: 25px;
-    font-family: "Montserrat";
+    font-family: Arial;
     font-size: 24px;
     font-weight: 500;
     text-align: center;
     background-color: #fff;
     color: #ed1765;
+    box-shadow: 0 0 20px #BCBEC0;
 }
 
 
@@ -83,10 +85,10 @@ body{
 /* axo view page */
 
 #back-btn{
-    width: 5%;
+    width: 50px;
     position: fixed;
-    top: 5%;
-    left: 5%;
+    top: 40px;
+    left: 40px;
     z-index: 2;
 }
 #start-journey{
@@ -169,8 +171,32 @@ body{
 
 /* acts page */
 
-main{
-    background-color: #fff;
+#fixed-bottom{
+    z-index: 2;
+    bottom: 0;
+    position: fixed;
+}
+
+#fixed-people{
+    height: 150px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+#fixed-roads{
+    width: 100vw;
+}
+#road-1{
+    border: 5px solid #A9D196;
+    margin: 0;
+}
+#road-2{
+    border: 3px solid #7C7C7C;
+    margin: 0;
+}
+#road-3{
+    border: 6px solid #A8977F;
+    margin: 0;
 }
 
 .all-acts{
@@ -181,17 +207,96 @@ main{
 .act-frames{
     position: relative;
     top: 0;
-    left: 0;
+    left: 10%;
 }
 #act-graph{
-    height: 100vh;
+    height: 96vh;
     position: relative;
     top: 0;
     left: 0;
 }
 #act-text{
-    height: 100vh;
+    height: 96vh;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.wireframes{
+    position: relative;
+    left: 10%;
+}
+#act-wireframe{
+    height: 90vh;
+    position: relative;
+    left: 0;
+    top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#small-body-fly-kst{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ed1765;
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+
+#small-body-fly-dance{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ed1765;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+#small-body-fly-elpc{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #ed1765;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+
+#small-body-fly-ns{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    color: #ed1765;
+    position: absolute;
+    top: 5%;
+    right: 13%;
+}
+
+#small-body-fly-wf{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ed1765;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+#small-body-fly-duo{
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #ed1765;
+    position: absolute;
+    top: 15%;
+    left: 10%;
 }

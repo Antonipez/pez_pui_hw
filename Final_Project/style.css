@@ -33,7 +33,7 @@ body{
 }
 
 .landing-section{
-    margin: 300px 100px 300px 100px;
+    margin: 250px 100px 250px 100px;
     display: flex;
     flex-direction: column; 
 }
@@ -81,8 +81,9 @@ body{
 }
 
 
-.box {
-    display: block;
+#kst-sign {
+    height: 120px;
+    margin: 200px auto 200px auto;
   }
 
 
@@ -349,3 +350,6 @@ progress::-moz-progress-bar {
     top: 15%;
     left: 8%;
 }
+
+
+

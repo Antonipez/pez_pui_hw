@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
 
+     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 
+    <!-- scroll profress js library -->
     <link href="/scrollprogressJS-master/scrollprogressJS.css" rel="stylesheet">
     <script src="/scrollprogressJS-master/scrollprogressJS.js"></script>
 
@@ -23,7 +25,8 @@
         <img id="back-btn" src="/assets/back-btn.png" alt="back button to last page"/>
       </a>
       <a href="Acts.html">
-        <img id="start-journey" src="/assets/start-journey-here.png" alt="start journey button"/>
+        <img id="start-journey" src="/assets/start-journey-here.png" alt="start journey button"
+          data-90p="opacity: 0;" data-100p="opacity: 1;"/>
       </a>
     </header>
 
@@ -33,18 +36,37 @@
 
     <div class="tags">
 
-      <div>
-        <img id="target-tag" src="/assets/Frame 13.png" alt="target tag"/>
-      </div>
-
-      <img id="kst-tag" src="/assets/Frame 12.png" alt="kelly strayhorn theater tag"/>
-      <img id="nail-salon-tag" src="/assets/Frame 14.png" alt="nail salon tag"/>
-      <img id="elpc-tag" src="/assets/Frame 15.png" alt="elpc tag"/>
-      <img id="duo-tag" src="/assets/Frame 16.png" alt="duolingo tag"/>
-      <img id="whole-foods-tag" src="/assets/Frame 17.png" alt="whole foods tag"/>
-      <img id="dance-studio-tag" src="/assets/Frame 18.png" alt="alloy dance studio tag"/>
+      <img id="target-tag" src="/assets/Frame 13.png" alt="target tag"
+        data-0p="transform:scale(1.0);"
+        data-8p="transform:scale(1.5);"
+        data-16p="transform:scale(1.0);"/>
+      <img id="kst-tag" src="/assets/Frame 12.png" alt="kelly strayhorn theater tag"
+        data-8p="transform:scale(1.0);"
+        data-16p="transform:scale(1.5);"
+        data-24p="transform:scale(1.0);"/>
+      <img id="nail-salon-tag" src="/assets/Frame 14.png" alt="nail salon tag"
+        data-16p="transform:scale(1.0);"
+        data-24p="transform:scale(1.5);"
+        data-32p="transform:scale(1.0);"/>
+      <img id="elpc-tag" src="/assets/Frame 15.png" alt="elpc tag"
+        data-32p="transform:scale(1.0);"
+        data-40p="transform:scale(1.5);"
+        data-48p="transform:scale(1.0);"/>
+      <img id="duo-tag" src="/assets/Frame 16.png" alt="duolingo tag"
+        data-40p="transform:scale(1.0);"
+        data-48p="transform:scale(1.5);"
+        data-56p="transform:scale(1.0);"/>
+      <img id="whole-foods-tag" src="/assets/Frame 17.png" alt="whole foods tag"
+        data-48p="transform:scale(1.0);"
+        data-56p="transform:scale(1.5);"
+        data-64p="transform:scale(1.0);"/>
+      <img id="dance-studio-tag" src="/assets/Frame 18.png" alt="alloy dance studio tag"
+        data-80p="transform:scale(1.0);"
+        data-88p="transform:scale(1.5);"
+        data-96p="transform:scale(1.0);"/>
     </div>
 
+    <!-- skrollr library -->
     <script type="text/javascript" src="/skrollr.min.js"></script>
 	  <script type="text/javascript">
 	  var s = skrollr.init();

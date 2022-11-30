@@ -4,8 +4,22 @@
   <head>
     <meta charset="UTF-8">
     <title>Acts</title>
+   
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
+
+    <!-- jquery iu library -->
+    <link rel="stylesheet" href="/jquery-ui-1.13.2.custom/jquery-ui.min.css">
+    <script src="/jquery-ui-1.13.2.custom/external/jquery/jquery.js"></script>
+    <script src="/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+
+
   </head>
   
   <body>
@@ -23,6 +37,8 @@
         </div>
       </div>
     </header>
+
+    <progress max="100" value="0"></progress>
 
     <div class="all-acts">
       
@@ -155,6 +171,11 @@
 
     </div>
 
-    
+    <!-- skrollr library -->
+    <script type="text/javascript" src="/skrollr.min.js"></script>
+	  <script type="text/javascript">
+	  var s = skrollr.init();
+	  </script>
+
   </body>
 </html>

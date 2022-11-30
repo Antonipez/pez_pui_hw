@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "gsap": "^3.11.3",
+    "progressbar.js": "^1.1.0",
+    "wavescrollbar": "^1.0.2"
+  }
+}

@@ -6,16 +6,24 @@
     <title>Axo View</title>
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <link href="/scrollprogressJS-master/scrollprogressJS.css" rel="stylesheet">
+    <script src="/scrollprogressJS-master/scrollprogressJS.js"></script>
+
   </head>
   
   <body>
 
     <header>
       <a href="Landing-Page.html">
-        <img id="back-btn"  src="/assets/back-btn.png" alt="back button to last page"/>
+        <img id="back-btn" src="/assets/back-btn.png" alt="back button to last page"/>
       </a>
       <a href="Acts.html">
-        <img id="start-journey"  src="/assets/start-journey-here.png" alt="start journey button"/>
+        <img id="start-journey" src="/assets/start-journey-here.png" alt="start journey button"/>
       </a>
     </header>
 
@@ -24,7 +32,11 @@
     </div>
 
     <div class="tags">
-      <img id="target-tag" src="/assets/Frame 13.png" alt="target tag"/>
+
+      <div>
+        <img id="target-tag" src="/assets/Frame 13.png" alt="target tag"/>
+      </div>
+
       <img id="kst-tag" src="/assets/Frame 12.png" alt="kelly strayhorn theater tag"/>
       <img id="nail-salon-tag" src="/assets/Frame 14.png" alt="nail salon tag"/>
       <img id="elpc-tag" src="/assets/Frame 15.png" alt="elpc tag"/>
@@ -33,6 +45,10 @@
       <img id="dance-studio-tag" src="/assets/Frame 18.png" alt="alloy dance studio tag"/>
     </div>
 
-    
+    <script type="text/javascript" src="/skrollr.min.js"></script>
+	  <script type="text/javascript">
+	  var s = skrollr.init();
+	  </script>
+
   </body>
 </html>

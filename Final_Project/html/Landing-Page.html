@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
   <head>
     <meta charset="UTF-8">
+
     <title>Kelly Strayhorn Theater Story Mapping</title>
     <link rel="stylesheet" href="/style.css">
     <script defer src="/app.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    
+    <link href="/scrollprogressJS-master/scrollprogressJS.css" rel="stylesheet">
+    <script src="/scrollprogressJS-master/scrollprogressJS.js"></script>
+
   </head>
   
   <body id="black-background">
@@ -17,29 +26,30 @@
       <div class="landing-section">
         <div id="mid-title-highlight">
           Kelly Strayhorn Theater
-        </div>
+        </div>        
         <div id="big-title">
           Story Mapping
         </div>
       </div>
-    </div>
-      <div class="landing-page">
-       <div class="landing-section">
-        <div id="mid-body">
+
+      <div class="landing-section">
+        <div id="mid-body" data-bottom-top="opacity: 0; transform: translateY(20px);" data-center-bottom="opacity: 1; transform: translateY(0px);">
           Kelly Strayhorn Theater is a home for creative experimentation, community dialogue, and collective action rooted in the liberation of Black and queer people, which is being <span id="mid-title-highlight">ATTACKED</span> right now.
         </div>
-       </div>
-    </div>
-      
-    <div class="landing-page">
+      </div>
+
       <div class="landing-section">
-        <div id="mid-body">
+        <div id="mid-body" data-bottom-top="opacity: 0; transform: translateY(100px);" data-center-bottom="opacity: 1; transform: translateY(0px);">
           This is our "<span id="mid-title-highlight">WARNING</span>".
         </div>
         <button id="landing-page-btn" onclick="location.href= 'Axo-View.html'" type="button">Enter Map</button>
-     </div>
+      </div>
     </div>
-    
+
+    <script type="text/javascript" src="/skrollr.min.js"></script>
+	  <script type="text/javascript">
+	  var s = skrollr.init();
+	  </script>
 
   </body>
 </html>

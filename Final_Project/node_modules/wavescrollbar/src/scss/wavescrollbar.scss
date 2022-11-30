@@ -1,0 +1,41 @@
+/*!
+ * Wavescrollbar v1.0.0 (https://github.com/yonicb/wavescrollbar/)
+ * Copyright 2011-2019 The Wavescrollbar Author
+ * Copyright 2019 Yoni Calsin.
+ * Licensed under MIT (https://github.com/yonicb/wavescrollbar/blob/master/LICENSE)
+ */
+#wavescrollbar {
+   background: #eee;
+   height: 5px;
+   width: 100%;
+   display: block;
+   position: fixed;
+   top: 0;
+   left: 0;
+   #wavescrollbar-progress {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #38ef7d;
+      position: relative;
+      &.animation {
+         &:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(45deg,rgba(255,255,255,.5) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.5) 50%,rgba(255,255,255,.5) 75%,transparent 75%,transparent) !important;
+            background-size: 1rem 1rem !important;
+            animation: wavescrollbarAnimation .1s linear infinite;
+         }
+      }
+   }
+}
+
+@keyframes wavescrollbarAnimation {
+   from {
+      background-position: 1rem 0;
+   }
+}

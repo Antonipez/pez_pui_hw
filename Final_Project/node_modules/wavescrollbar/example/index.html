@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Wavescrollbar</title>
+
+   <!-- Import wavescrollbar styles -->
+   <link rel="stylesheet" href="../dist/css/wavescrollbar.css">
+
+   <!-- Import demo styles -->
+   <link rel="stylesheet" href="./demo.css">
+</head>
+
+<body>
+   <wavescrollbar>
+   </wavescrollbar>
+
+   <main class="container">
+      <img src="./wavescrollbar-logo.png" class="logo">
+      <h1 class="logo-title tac">Wavescrollbar</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum possimus reiciendis dolores nihil modi
+         deserunt incidunt ex, amet fugiat. Facilis odio fuga tenetur sit necessitatibus iusto illo veniam deleniti at!
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error delectus exercitationem non nam molestiae.
+         Laborum minima ex optio ipsam iure placeat eum, illo odio quasi eligendi minus, vitae, error non.</p>
+   </main>
+
+
+   <script src="../dist/js/wavescrollbar.js"></script>
+
+   <script>
+
+      var wavescrollbar = new Wavescrollbar()
+      wavescrollbar.setAnimation()
+      wavescrollbar.setTransition()
+      wavescrollbar.setGradient({
+         colors: [
+            "red",
+            "blue"
+         ]
+      })
+      // wavescrollbar.setBackground()
+      // wavescrollbar.setHeight("100px")
+      // wavescrollbar.setContainerBackground("white")
+   </script>
+</body>
+
+</html>

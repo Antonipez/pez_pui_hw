@@ -18,12 +18,15 @@
 //   }
 
 
+// import 'animate.css';
+
+
 document.addEventListener("DOMContentLoaded", function (event) {
     progressJS.start({
         "color": "#ed1765",
         "height": "12px",
         "zIndex": 9999,
-        "ontop": false,
+        "ontop": true,
         //left to right
         "ltr": true,
         //js style or css
@@ -32,12 +35,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 
-import 'animate.css';
 
-import { gsap } from "gsap";
-
-
-
-document.querySelectorAll(".act-text").forEach((dot, i) => {  
-  gsap.to(img, { duration: 2.5, ease: "power4.out", y: -500 });
+jQuery('.all-acts').jstars({
+	image_path: 'jQuery-Plugin-For-Magic-Cursor-Animations-jStars/images/jstar-modern.png', // folder with magic image
+	style: 'rand',       // optional, color, default: white
+	frequency: 19         // optional, from 1 to 19
 });

@@ -35,9 +35,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 
-
 jQuery('.all-acts').jstars({
-	image_path: 'jQuery-Plugin-For-Magic-Cursor-Animations-jStars/images/jstar-modern.png', // folder with magic image
+	image_path: '/jQuery-Plugin-For-Magic-Cursor-Animations-jStars/images/', // folder with magic image
 	style: 'rand',       // optional, color, default: white
-	frequency: 19         // optional, from 1 to 19
+	frequency: 20,         // optional, from 1 to 19
+  width: 50, // single star width
+	height: 50, // single star height
+	delay: 300 // rotate speed
 });
+

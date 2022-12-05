@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 jQuery('.all-acts').jstars({
-	image_path: '/jQuery-Plugin-For-Magic-Cursor-Animations-jStars/images/', // folder with magic image
+	image_path: '../jQuery-Plugin-For-Magic-Cursor-Animations-jStars/images/', // folder with magic image
 	style: 'rand',       // optional, color, default: white
 	frequency: 20,         // optional, from 1 to 19
   width: 50, // single star width
